@@ -14,7 +14,7 @@ countryInfo.addEventListener('input', debounce(onInputClick, DEBOUNCE_DELAY));
 let searchName = '';
 
 function onInputClick(event) {
-	event.preventDefault();
+
 	searchName = countryInput.value.trim();
 
 	if(searchName === '') {
