@@ -21,7 +21,8 @@ function onInputClick(event) {
 		countryInfo.innerHTML = '';
 		countryList.innerHTML = '';
 		return;
-	} else fetchCountries(searchName).then(countries =>  {
+	} 
+	fetchCountries(searchName).then(countries =>  {
 	   if (countries.length > 1) {
 		  countryList.insertAdjacentHTML('beforeend', renderCountryList(countries));
         countryInfo.insertAdjacentHTML('beforeend', renderCountryInfo(countries));
